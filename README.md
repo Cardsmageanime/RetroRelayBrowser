@@ -29,6 +29,10 @@ This is **beta software**, and further issues may remain. The installer and EXE 
 
 [Preview 2 (`v2.0.0-preview2`)](https://github.com/Cardsmageanime/RetroRelayBrowser/releases/tag/v2.0.0-preview2) remains available as an archived fallback while Preview 3 is rolled out. It is not the recommended build once Preview 3 is live.
 
+## Future revenue features (planned)
+
+Retro Relay Browser will remain free. We are designing three optional ways to support development: [Indie Developer Spotlight sponsorships](https://github.com/Cardsmageanime/RetroRelayBrowser/issues/2), [Gaming Deals affiliate links](https://github.com/Cardsmageanime/RetroRelayBrowser/issues/3), and [voluntary Support Retro Relay donations](https://github.com/Cardsmageanime/RetroRelayBrowser/issues/4). These features **are not available in Preview 3** and no payments or partnerships are active. See the [monetization roadmap](MONETIZATION_ROADMAP.md).
+
 ## Linux
 
 Linux packaging and CI build scripts are in development. Native Linux compilation and desktop testing are still needed. The Windows EXE is not a Linux release.
