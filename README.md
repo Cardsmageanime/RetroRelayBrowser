@@ -33,6 +33,12 @@ This is **beta software**, and further issues may remain. The installer and EXE 
 
 Retro Relay Browser will remain free. We are designing three optional ways to support development: [Indie Developer Spotlight sponsorships](https://github.com/Cardsmageanime/RetroRelayBrowser/issues/2), [Gaming Deals affiliate links](https://github.com/Cardsmageanime/RetroRelayBrowser/issues/3), and [voluntary Support Retro Relay donations](https://github.com/Cardsmageanime/RetroRelayBrowser/issues/4). These features **are not available in Preview 3** and no payments or partnerships are active. See the [monetization roadmap](MONETIZATION_ROADMAP.md).
 
+## Browser import and privacy roadmap
+
+**Current development:** a local-only [bookmark importing feature](https://github.com/Cardsmageanime/RetroRelayBrowser/issues/5) for exported bookmarks from other browsers, plus [configurable privacy-oriented search](https://github.com/Cardsmageanime/RetroRelayBrowser/issues/7). A standalone bookmark-parser component has been tested, but it is **not integrated into the published Preview 3 executable** yet. The Windows application source and UI integration are required.
+
+**2027:** investigate an [optional VPN integration](https://github.com/Cardsmageanime/RetroRelayBrowser/issues/6), subject to provider/security evaluation. No VPN is included today.
+
 ## Linux
 
 Linux packaging and CI build scripts are in development. Native Linux compilation and desktop testing are still needed. The Windows EXE is not a Linux release.
