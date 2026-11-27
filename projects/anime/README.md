@@ -1,36 +1,33 @@
 # Retro Relay Anime Browser — Anime Edition
 
-**Project status:** New separate product in the same GitHub repository. Planned initial version: **0.1 Alpha**. **No Anime Edition binary is published or tested as a standalone application yet.**
+**Status (November 27, 2026): 0.1 Alpha source starter prepared; Windows EXE and installer still require build and GUI testing.** Gaming Edition remains unchanged.
 
-## Goal
-Reuse the reliable browsing engine from Retro Relay Browser, but create an **anime-only interface** instead of a gaming dashboard. Remove Twitch, Kick, game discovery and gaming-specific branding from this edition.
+This is a **separate anime-only QtWebEngine application** under the same repository, not another feature embedded in Gaming Edition.
 
-## Planned Anime Edition features
-- Seasonal anime calendars, including the Spring 2027 view with dates identified as tentative when unconfirmed
-- Authorized streaming destinations, original source announcements, and optional watchlists
-- Manga/light novels, anime news, anime DVDs and Blu-rays
-- Official Japanese figure/action-figure manufacturers, import shops, clothing and licensed merchandise
-- Local-first bookmarks import and configurable privacy-oriented search
-- No unlicensed anime video hosting; avoid scraping or redistributing protected artwork without permission
+## 0.1 Alpha starter — implemented locally
 
-## Separation requirements
-- Local Windows workspace: `C:\RRAnimeBrowser` (separate copy or branch, not editing `C:\RRBrowser` in place)
-- Separate app name, executable, installer AppId, install path and Start menu/desktop shortcuts
-- **Separate profile directory**, bookmarks, history, cookies, sessions and cache from Gaming Edition
-- Clearly distinguish both editions' release assets and tags, while retaining one repository and one GitHub account
-- First audit/reuse the previously developed anime discovery modules from the user's local source only after confirming they were preserved in a backup
+- Independent application name, Qt Settings namespace, WebEngine profile, cache and bookmarks from Gaming Edition
+- Dedicated anime homepage, tabs, navigation, search, anime sidebar and Anime Calendar action
+- On-demand seasonal AniList metadata with Spring 2027 selected; official streaming, Japanese figures/clothing, and Blu-ray retailer directories
+- Local-only bookmarks import from user-selected HTML and compatible Chromium JSON, with confirmation and duplicate checks
+- No Twitch, Kick, indie-gaming dashboard, or gaming edition installation changes
+- Python syntax check passed; **5/5 alpha unit tests passed locally** (not a Windows GUI test)
+- Download the generated `RetroRelayAnimeBrowser_0_1_Alpha_Starter.zip` from the development conversation to build on Windows. The source is not yet published in this repo as runnable code.
 
-## Future source layout
-```
-projects/anime/
-  README.md
-  app/                  # anime edition Python source (to be added after local development)
-  tests/
-  packaging/
-```
+## Windows development procedure
 
-## Release naming example
-`anime-v0.1.0-alpha` tag and `RetroRelayAnimeBrowser-Setup-0.1.0-alpha.exe` asset. Do not publish a release until the complete packaged app has passed testing.
+1. Extract the provided ZIP into `C:\RRAnimeBrowser`.
+2. Run `powershell -NoProfile -ExecutionPolicy Bypass -File "C:\RRAnimeBrowser\Build_Anime_Alpha.ps1"`.
+3. If the tests and PyInstaller succeed, launch `C:\RRAnimeBrowser\dist\RetroRelayAnimeBrowser.exe`.
+4. Verify the window, tabs, all sidebar links, Spring 2027 refresh (including error handling), and bookmarks import.
+5. Build a distinct Anime Edition installer **only after** Windows testing. Do not replace the Gaming Edition installer.
 
-## Shared core
-Reuse the web engine, tabs, navigation, bookmark import and carefully reviewed privacy/security improvements. Do not share user profiles or payment/affiliate settings between editions by default.
+## Feature boundaries
+
+Anime 0.1 is a proof-of-concept browser edition. Streaming links and shops are third-party destinations, not affiliated or guaranteed inventory feeds. Anime dates can be tentative. Manga, notifications, watchlists, richer privacy settings, and DVD/merchandise announcement feeds remain future development.
+
+VPN remains a 2027 evaluation. Security review, browser-engine updates and clean Windows testing are needed before broad distribution.
+
+## Repository release naming
+
+Use `anime-v0.1.0-alpha` (future release tag), `RetroRelayAnimeBrowser.exe` and `RetroRelayAnimeBrowser-Setup-0.1.0-alpha.exe`, without renaming or removing existing Gaming Edition releases.
