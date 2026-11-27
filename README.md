@@ -39,6 +39,10 @@ Retro Relay Browser will remain free. We are designing three optional ways to su
 
 **2027:** investigate an [optional VPN integration](https://github.com/Cardsmageanime/RetroRelayBrowser/issues/6), subject to provider/security evaluation. No VPN is included today.
 
+## Anime Discovery — in development
+
+A new **Anime Discovery** hub is being developed alongside the gaming features: [Spring 2027 and other seasonal anime metadata](https://github.com/Cardsmageanime/RetroRelayBrowser/issues/8), legal streaming destinations, Japanese action figures and imports, licensed anime clothing, and DVD/Blu-ray retailers. The first source patch is prepared for local Windows testing; **it is not in the published Preview 3 build yet**. Seasonal dates, store inventory and streaming rights must be verified through their sources. The browser does not claim affiliation with the linked services or retailers.
+
 ## Linux
 
 Linux packaging and CI build scripts are in development. Native Linux compilation and desktop testing are still needed. The Windows EXE is not a Linux release.
