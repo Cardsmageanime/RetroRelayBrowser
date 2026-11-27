@@ -1,6 +1,13 @@
-# Retro Relay Browser
+# Retro Relay Browser — Two Editions, One Repository
 
-**Retro Relay Browser** is a free, gaming-focused desktop browser for Windows. Linux support is in development. It offers tabbed browsing, customizable themes, gaming news and discovery, and privacy and resource-management features.
+This repository is home to two **separate browser products** under the Retro Relay family. Both use the same GitHub repository and may reuse a reviewed browser foundation, but have distinct features, branding, installation identities and user profiles.
+
+| Edition | Focus | Project folder | Status |
+|---|---|---|---|
+| **Retro Relay Browser (Gaming Edition)** | Games, Twitch, Kick, Indie Discovery and gaming tools | [Gaming project](projects/gaming/README.md) | Existing Windows beta |
+| **Retro Relay Anime Browser (Anime Edition)** | Seasonal anime, legal streaming destinations, manga, figures, clothing and home video | [Anime project](projects/anime/README.md) | Separate 0.1 Alpha in planning; no standalone binary yet |
+
+**The current Windows Preview 3 release and its download information below apply to Gaming Edition only.** Linux support is in development.
 
 ## Windows beta — Preview 3
 
@@ -39,9 +46,9 @@ Retro Relay Browser will remain free. We are designing three optional ways to su
 
 **2027:** investigate an [optional VPN integration](https://github.com/Cardsmageanime/RetroRelayBrowser/issues/6), subject to provider/security evaluation. No VPN is included today.
 
-## Anime Discovery — in development
+## Anime browser is a separate product
 
-A new **Anime Discovery** hub is being developed alongside the gaming features: [Spring 2027 and other seasonal anime metadata](https://github.com/Cardsmageanime/RetroRelayBrowser/issues/8), legal streaming destinations, Japanese action figures and imports, licensed anime clothing, and DVD/Blu-ray retailers. The first source patch is prepared for local Windows testing; **it is not in the published Preview 3 build yet**. Seasonal dates, store inventory and streaming rights must be verified through their sources. The browser does not claim affiliation with the linked services or retailers.
+The earlier Anime Discovery work is being redirected into the **[Retro Relay Anime Browser](projects/anime/README.md)**, not included as a permanent feature in Gaming Edition. Keep the gaming browser focused on games and plan a separate anime-only homepage, navigation, branding, profile and installer. Previous Anime Discovery experiments are development material, not a released standalone Anime Edition. See the [original Anime Discovery feature request](https://github.com/Cardsmageanime/RetroRelayBrowser/issues/8).
 
 ## Linux
 
